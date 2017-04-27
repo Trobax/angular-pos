@@ -1,3 +1,10 @@
 <h1>
   {{title}}
 </h1>
+
+
+<div *ngFor="let product of products | async">
+  <p> Product name: {{ product.name }} </p>
+  <p> Product price: {{ product.price }} </p>
+  <hr>
+</div>
